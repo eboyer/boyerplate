@@ -17,16 +17,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- ICONS -->
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   
   <!-- JS -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src="js/libs/modernizr-2.0.min.js"></script>
+  <script src="js/libs/respond.min.js"></script>
   <!--[if lt IE 9]>
   <script src="js/libs/html5.js"></script>
   <![endif]-->
   
   <!-- CSS -->
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">  
 </head>
 <body lang="en">
@@ -41,13 +43,19 @@
 
     </footer><!-- /footer -->
   </div><!-- /#wrap -->
+  
   <!-- JS -->
-  <script src="js/libs/jquery-1.6.1.min.js"></script>
-  <script src="js/libs/jquery-ui-1.8.13.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="js/libs/jquery-ui-1.8.14.min.js"></script>
   <script src="js/script.js"></script>
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix('.png');</script>
-  <![endif]-->
+  
+  <!-- GOOGLE ANALYTICS -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 </body>
 </html>
