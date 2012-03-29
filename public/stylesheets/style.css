@@ -1,5 +1,3 @@
-/* <3 CSS */
-
 /*
 ----------------------------------------------------------------
   B A S E
@@ -12,69 +10,68 @@ select, input, textarea, button { font:99% sans-serif; }
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
-ul, ol { margin-left: 2em; }
-ol { list-style-type: decimal; }
-ul li,
-ol li{ margin: 0 0 10px 0; }
 
 /*
 ----------------------------------------------------------------
   T Y P O G R A P H Y
 ---------------------------------------------------------------- */
 small { font-size: 85%; }
-strong, th { font-weight: bold; }
-td { vertical-align: top; }
+b, strong{ font-weight: bold; }
 
 pre { white-space: pre; white-space: pre-wrap; white-space: pre-line; word-wrap: break-word; padding: 15px; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6{ margin: 0 0 10px 0; }
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
 
 p{}
 
-a, a:active, a:visited { color: #607890; }
-a:hover, a:active { outline: none; }
-a:hover { color: #036; }
-a:link { -webkit-tap-highlight-color: #FF5E99; }
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+nav ul, nav li { padding: 0; margin: 0; list-style:none; list-style-image: none; }
+ol,
+ul{}
+ol li,
+ul li{ margin: 0 0 10px 0; }
+  
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
 
+a:hover, a:active { outline: 0; }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
 /*
 ----------------------------------------------------------------
   G L O B A L S 
 ---------------------------------------------------------------- */
-.nindent { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir{ border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+.hidden { display: none !important; visibility: hidden; }
+.invisible { visibility: hidden; }
+
 .alpha,
 .middle,
 .omega{ float: left; display: inline; position: relative; }
 
 /*
 ----------------------------------------------------------------
-  F O R M S
----------------------------------------------------------------- */
-button, input, select, textarea { margin: 0; }
-label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
-/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
-input[type="radio"] { vertical-align: text-bottom; }
-input[type="checkbox"] { vertical-align: bottom; }
-.ie7 input[type="checkbox"] { vertical-align: baseline; }
-.ie6 input { vertical-align: text-bottom; }
-
-/*
-----------------------------------------------------------------
   P R I N T
 ---------------------------------------------------------------- */
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
-  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
-  a, a:visited { color: #444 !important; text-decoration: underline; }
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  thead { display: table-header-group; } /* h5bp.com/t */
   tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
+  h2, h3 { page-break-after: avoid; }
 }
