@@ -1,1 +1,3 @@
-#  HTML5 BOYERplate based on: [http://html5boilerplate.com](http://html5boilerplate.com)
+## boyerplate
+
+Just a stripped down version of what you'll find on http://html5boilerplate.com/.
