@@ -9,9 +9,7 @@
 ----------------------------------------------------------------
   D E F A U L T S
 ---------------------------------------------------------------- */
-//$hrBaseColor: #01d5ce;
-//$empBaseColor: #00aeef;
-$baseColor: #a1af80;
+$baseColor: #303030;
 
 /*
 ----------------------------------------------------------------
@@ -19,9 +17,9 @@ $baseColor: #a1af80;
 ---------------------------------------------------------------- */
 html{ -webkit-font-smoothing: antialiased; }
 body{
-  background: #fff;
+  background: #efefef;
   margin: 0; padding: 0;
-  color: #9c9a9a;
+  color: #303030;
 	font-family: 'Helvetica', Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -31,7 +29,7 @@ body{
 ----------------------------------------------------------------
   T Y P O G R A P H Y 
 ---------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6{ margin: 0 0 30px 0; color: $baseColor; font-weight: bold; font-family: 'Helvetica', Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6{ margin: 0 0 10px 0; color: $baseColor; font-weight: bold; font-family: 'Helvetica', Arial, sans-serif; }
 h1{ 
   font-size: 40px; letter-spacing: 0.01em;   
 }
@@ -47,10 +45,8 @@ h4{ font-size: 12px; }
 p{
   font-size: 18px;
   line-height: 22px; letter-spacing: 0.04em;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
 }
-
-.lightened{ color: #b4b4b4; }
 
 ul,
 ol{ margin: 0 0 20px 0; padding: 0; }
@@ -63,8 +59,8 @@ strong, th { font-weight: bold; }
 a:active { outline: none; }
 a:focus { outline: none; }
 
-a, a:active, a:visited { color: #a1af80; text-decoration: none; }
-a:hover { color: darken(#a1af80, 10%); text-decoration: none; }
+a, a:active, a:visited { color: #83ad4d; text-decoration: none; }
+a:hover { color: darken(#83ad4d, 10%); text-decoration: none; }
 
 img{ display: block; }
 
@@ -73,131 +69,14 @@ img{ display: block; }
   S T R U C T U R E
 ---------------------------------------------------------------- */
 #wrap{
-	padding: 110px 0 0 0;
-}
-
-.top{
-	margin: 0; 
-	height: 100px; width: 100%;
-	position: fixed; top: 0; left: 0;
-	background: #f4f2f2;
-  z-index: 999;
-  
-	.logo{
-		float: left;
-		@include nindent;
-		width: 169px; height: 79px;
-		margin: 8px 0 0 0;
-		background: transparent url(../images/logo.png) 0 0 no-repeat;
-	}
-	
-	.main-navigation{
-		float: right;
-		padding: 37px 0 0 0;
-		ul{
-			@include nav;
-			li{
-				float: left; display: inline;
-				margin: 0 10px 0 0;
-				font-size: 15px;
-				&.seperator{ color: #9c9a9a; }
-				a{
-					float: left;
-					font-size: 15px; color: #9c9a9a; line-height: 15px;
-				}
-			}
-		}
-	}
-	
-}
-
-.content-wrap{ padding-top: 75px; }
-.row{
-  margin-bottom: 75px; 
-  &.bordered{
-    padding-top: 75px;
-    background: url(../images/border-footer.png) center top no-repeat;
-  }
-  &.intro,
-  &.learn-more,
-  &.about{
-    text-align: center;
-  }  
-}
-.content-block{ margin-bottom: 35px; text-align: left; }
-
-.sub-navigation{
-  background: #e8e8e8;
-  padding: 15px 0 15px 160px; margin: 0 0 75px 0;
-  ul{
-    margin: 0;
-    @inclue nav;
-    @include clearfix;
-    li{
-      float: left; display: inline;
-      margin: 0 10px 0 0;
-      a{
-        float: left; 
-        color: #b4b4b4; font-size: 18px; line-height: 18px;
-        &:hover{ color: darken(#b4b4b4, 10%); }
-      }
-      &.current{ a{ color: #2d2d2d; } }
-    }  
-  }
-}
-.tab-content{ margin: 0 0 20px 0; }
-.actions{
-  @include nav;
-  @include clearfix;
-  li{
-    float: left; display: inline; 
-    margin: 0 20px 0 0;
-    a{
-      float: left;
-      color: #2d2d2d; font-size: 18px; line-height: 18px;
-    }
-  }
-}
-
-.bottom{
-	padding-bottom: 100px; 
-	background: url(../images/border-footer.png) center top no-repeat;
-	
-	.row{
-		padding-top: 20px; padding-bottom: 20px;
-	}
-	p{
-		font-size: 13px; letter-spacing: 0.04em;
-		&.copyright{
-			color: #b4b4b4; font-size: 12px; 
-		}
-	}
-  ul{
-    float: right;
-    @include clearfix;
-    @include nav;
-    li{
-      float: left; display: inline;
-      margin: 0 0 0 10px;
-    }
-  }
+  padding: 100px 0;
 }
 
 /*
 ----------------------------------------------------------------
   B U T T O N S
 ---------------------------------------------------------------- */
-a.btn{
-  padding: 10px 40px 10px 40px;
-  background: #a1af80;
-  color: #fff; font-size: 15px; line-height: 15px;
-  @include border-radius(5px);
-  display: inline-block;
-  
-  &:hover{ background: darken(#a1af80, 10%); };
-  
-  &.get-started{ background: #b4b4b4; &:hover{ background: darken(#b4b4b4, 10%); }; }
-}
+.btn{}
 
 /*
 ----------------------------------------------------------------
