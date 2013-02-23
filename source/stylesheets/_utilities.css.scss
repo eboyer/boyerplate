@@ -1,0 +1,72 @@
+/*
+----------------------------------------------------------------
+  U T I L I T Y  C L A S S E S 
+---------------------------------------------------------------- */
+/* General Gloabls */
+.clr{ clear: both; }
+.fl{ float: left; }
+.fr{ float: right; }
+
+@mixin nindent{
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+@mixin nav{ list-style: none; margin: 0; padding: 0; }
+
+.hide{ display: none; }
+.show{ display: block; }
+.invisible { visibility: hidden; }
+
+.alpha,
+.middle,
+.omega{ float: left; position: relative; display: inline; }
+
+@mixin fill{ width: 100%; }
+
+@mixin clearfix{
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin ie7-inline-block{
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+}
+
+@mixin shadow{
+  -moz-box-shadow: 0 0 3px #b0afaf;
+  -webkit-box-shadow: 0 0 3px #b0afaf;
+  box-shadow: 0 0 3px #b0afaf;
+  /* For IE 8 */
+/*  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b0afaf')";*/
+  /* For IE 5.5 - 7 */
+/*  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b0afaf');*/
+}
+
+@mixin shadowedBox(){
+  -moz-box-shadow: 0 0 3px #b0afaf;
+  -webkit-box-shadow: 0 0 3px #b0afaf;
+  box-shadow: 0 0 3px #b0afaf;
+  border-left: 1px solid #e2e1e1;
+  border-right: 1px solid #e2e1e1;
+  border-bottom: 1px solid #b9b8b8;
+}
+
+@mixin allRounded{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
