@@ -3,7 +3,6 @@
 Requirements
 ===
 - [Middleman](http://middlemanapp.com/)
-- [Foundation](http://foundation.zurb.com/) by Zurb
 
 
 Local Development
