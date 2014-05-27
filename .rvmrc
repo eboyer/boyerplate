@@ -1,1 +1,1 @@
-rvm ruby-1.9.3-p327@boyerplate --create
+rvm ruby-2.1.2@boyerplate --create
