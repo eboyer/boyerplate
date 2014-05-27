@@ -2,7 +2,7 @@
 ----------------------------------------------------------------
   I M P O R T S 
 ---------------------------------------------------------------- */
-@import "foundation";
+@import "normalize";
 @import "utilities";
 
 /*
@@ -69,7 +69,7 @@ img{ display: block; }
   S T R U C T U R E
 ---------------------------------------------------------------- */
 #wrap{
-  padding: 100px 0;
+  padding: 100px;
 }
 
 /*
@@ -82,14 +82,3 @@ img{ display: block; }
 ----------------------------------------------------------------
   M E D I A  Q U E R I E S
 ---------------------------------------------------------------- */
-@media only screen and (min-width: $screenXlarge) {
-	
-}
-
-@media only screen and (max-width: $screenMedium) and (min-width: $screenSmall) {
-	
-}
-
-@media only screen and (max-width: $screenSmall - 1){
-	
-} 

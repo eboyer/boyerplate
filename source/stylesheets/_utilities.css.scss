@@ -46,25 +46,6 @@
   *zoom: 1;
 }
 
-@mixin shadow{
-  -moz-box-shadow: 0 0 3px #b0afaf;
-  -webkit-box-shadow: 0 0 3px #b0afaf;
-  box-shadow: 0 0 3px #b0afaf;
-  /* For IE 8 */
-/*  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b0afaf')";*/
-  /* For IE 5.5 - 7 */
-/*  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b0afaf');*/
-}
-
-@mixin shadowedBox(){
-  -moz-box-shadow: 0 0 3px #b0afaf;
-  -webkit-box-shadow: 0 0 3px #b0afaf;
-  box-shadow: 0 0 3px #b0afaf;
-  border-left: 1px solid #e2e1e1;
-  border-right: 1px solid #e2e1e1;
-  border-bottom: 1px solid #b9b8b8;
-}
-
 @mixin allRounded{
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
