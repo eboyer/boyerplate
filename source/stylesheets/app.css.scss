@@ -1,84 +1,26 @@
 /*
 ----------------------------------------------------------------
-  I M P O R T S 
+  I M P O R T S
 ---------------------------------------------------------------- */
-@import "normalize";
-@import "utilities";
+@import "bourbon";
 
-/*
-----------------------------------------------------------------
-  D E F A U L T S
----------------------------------------------------------------- */
-$baseColor: #303030;
+@import "koi/imports/_normalize";
+@import "koi/imports/_color_palette";
+@import "koi/imports/_utilities";
+@import "koi/imports/_grid";
+@import "koi/imports/_unitize";
 
-/*
-----------------------------------------------------------------
-  B A S E
----------------------------------------------------------------- */
-html{ -webkit-font-smoothing: antialiased; }
 body{
-  background: #efefef;
-  margin: 0; padding: 0;
-  color: #303030;
-	font-family: 'Helvetica', Arial, sans-serif;
-	font-style: normal;
-	font-weight: 400;
+  background: #2b2f3e;
+  color: #959cad;
 }
+a{ color: #2fe7be; }
 
-/*
-----------------------------------------------------------------
-  T Y P O G R A P H Y 
----------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6{ margin: 0 0 10px 0; color: $baseColor; font-weight: bold; font-family: 'Helvetica', Arial, sans-serif; }
-h1{ 
-  font-size: 40px; letter-spacing: 0.01em;   
-}
-h2{ 
-  font-size: 35px; letter-spacing: 0.01em;   
-}
-h3{ 
-  font-size: 30px; letter-spacing: 0.01em;
-}
-
-h4{ font-size: 12px; }
-
-p{
-  font-size: 18px;
-  line-height: 22px; letter-spacing: 0.04em;
-  margin: 0 0 10px 0;
-}
-
-ul,
-ol{ margin: 0 0 20px 0; padding: 0; }
-li{ margin: 0 0 0 14px; font-size: 14px; line-height: 22px; }
-
-em { font-style: italic; }
-small { font-size: 85%; }
-strong, th { font-weight: bold; }
-
-a:active { outline: none; }
-a:focus { outline: none; }
-
-a, a:active, a:visited { color: #83ad4d; text-decoration: none; }
-a:hover { color: darken(#83ad4d, 10%); text-decoration: none; }
-
-img{ display: block; }
-
-/*
-----------------------------------------------------------------
-  S T R U C T U R E
----------------------------------------------------------------- */
-#wrap{
+.app{
   padding: 100px;
+  text-align: center;
 }
 
-/*
-----------------------------------------------------------------
-  B U T T O N S
----------------------------------------------------------------- */
-.btn{}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 480px) {}
 
-/*
-----------------------------------------------------------------
-  M E D I A  Q U E R I E S
----------------------------------------------------------------- */

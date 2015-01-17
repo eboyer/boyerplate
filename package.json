@@ -1,0 +1,21 @@
+{
+  "name": "boyerplate",
+  "version": "1.0.0",
+  "description": "A simple starting point for new projects.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eboyer/boyerplate.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3"
+  ],
+  "author": "Eric Boyer",
+  "bugs": {
+    "url": "https://github.com/eboyer/boyerplate/issues"
+  },
+  "homepage": "http://boyerplate.eboyer.io",
+  "dependencies" : {
+    "bower" : "1.3.12"
+  }
+}

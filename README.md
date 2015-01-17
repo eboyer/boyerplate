@@ -3,7 +3,7 @@
 Requirements
 ===
 - [Middleman](http://middlemanapp.com/)
-
+- [Koi](http://koi.eboyer.io)
 
 Local Development
 ---
@@ -11,6 +11,7 @@ To get started, navigate to the directory you pull this into and run:
 
 ```bash
 bundle install
+bower install
 ```
 
 When you're developing locally type:
@@ -19,23 +20,17 @@ When you're developing locally type:
 middleman server
 ```
 
-The result being:
+You can now browse to [http://localhost:4567](http://localhost:4567). I've included the [LiveReload](https://github.com/middleman/middleman-livereload) plugin for Middleman so your browser is always watching for changes. This can be anything in your templates or your SCSS.
 
-```bash
-== The Middleman is loading
-LiveReload 1.6 is waiting for a browser to connect.
-== The Middleman is standing watch on port 4567
-```
-
-You can now browse to [http://localhost:4567](http://localhost:4567). I've included the [LiveReload](https://github.com/middleman/middleman-livereload) plugin for Middleman so your browser is always watching for changes. This can be anything in your templates or your SCSS. 
-
-Publishing Static Files
+Build Static Files
 ---
-Once you're ready to put together your static site and get the final output run:
+To build and compile your static files:
 
 ```bash
 middleman build
 ```
+Compiled files are now in /build/
+
 
 Deploying
 ---
@@ -44,7 +39,7 @@ One of the nice things about using a rack app like Middleman when developing a s
 Assuming you have a [Heroku](http://www.heroku.com/) account setup and [Heroku Toolbelt](https://toolbelt.heroku.com/) installed you should be able to simply run:
 
 ```bash
-heroku create boyerplate
+heroku create SITENAME
 git add -u
 git commit -m "Your commit message here"
 git push heroku master

@@ -1,0 +1,7 @@
+{
+  "name": "boyerplate",
+  "homepage": "http://boyerplate.eboyer.io",
+  "dependencies": {
+    "koi": "git@github.com:eboyer/koi.git#1.0.1"
+  }
+}
