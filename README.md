@@ -7,12 +7,14 @@ Requirements
 
 Local Development
 ---
-To get started, navigate to the directory you pull this into and run:
+To get started, navigate to the directory you clone this repository in and run:
 
 ```bash
 bundle install
 bower install
 ```
+
+This will install all ruby dependencies as well as install [Koi](http://koi.eboyer.io) for a SCSS base.
 
 When you're developing locally type:
 
